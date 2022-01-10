@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstring>
-#include <vector>
 #include "node.h"
 
 using namespace std;
@@ -10,6 +9,7 @@ Node::Node(Student* student){
 }
 
 void Node::setNext(Node* node){
+  next = node;
 }
 
 Node* Node::getNext(){

@@ -5,14 +5,14 @@
 //all the libararies
 #include <iostream>
 #include <cstring>
-#include <vector>
+#include "student.h"
 
 using namespace std;
 
 class Node{//class declaration
  public: //all public functions
-  Node(Student*); //constructor
-  void setNext(Node*); //sets the next node
+  Node(Student* student); //constructor
+  void setNext(Node* node); //sets the next node
   Node* getNext(); //returns the next node
   ~Node(); //destructor
  private: //all private variables
