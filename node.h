@@ -14,9 +14,11 @@ class Node{//class declaration
   Node(Student* student); //constructor that takes in and stores a student pointer
   void setNext(Node* node); //sets the next node
   Node* getNext(); //returns the next node
+  Student* getStudent(); //gets the student pointer
   ~Node(); //destructor
  private: //all private variables
   Node* next; //the next node
+  Student* kid;
 };
 
 #endif
